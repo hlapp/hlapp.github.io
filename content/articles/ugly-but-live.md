@@ -1,6 +1,7 @@
 Title: Ugly but live: Practicing release early.
 Tags: open content, release
 Slug: ugly-but-live
+Date: 2014-01-02 20:18:02
 Category: Open Dev
 
 The site is now live on Github pages. Not yet under it's eventual custom URL, very raw, very ugly (yes, I don't at all like the default theme!), and essentially no content. 
