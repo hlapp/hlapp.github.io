@@ -17,10 +17,10 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+LINKS =  (('Open Bio Foundation', 'http://news.open-bio.org/'),
+          ('Dryad', 'http://blog.datadryad.org'),
+          ('Phenoscape', 'http://blog.phenoscape.org/'),
+          )
 
 # Social widget
 SOCIAL = (('Github', 'http://github.com/hlapp'),
