@@ -10,7 +10,7 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'http://hlapp.github.io'
+SITEURL = 'http://lappland.io'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'blog/feeds/all.atom.xml'

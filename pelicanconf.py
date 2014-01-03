@@ -65,3 +65,6 @@ IGNORE_FILES = ['.#*']
 # Retain the .git repo when we delete the output folder's content.
 OUTPUT_RETENTION = (".git",)
 
+# Custom URL for Github Pages-hosted site
+STATIC_PATHS = ['extras/CNAME',]
+EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},}
