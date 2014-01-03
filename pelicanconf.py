@@ -23,8 +23,14 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Github', 'http://github.com/hlapp'),
+          ('Google+', 'http://plus.google.com/+HilmarLapp/'),
+          ('Twitter', 'http://twitter.com/hlapp'),
+          ('LinkedIn', 'http://linkedin.com/in/hlapp'),
+          ('ORCID', 'http://orcid.org/0000-0001-9107-0714'),
+          ('Mendeley', 'http://www.mendeley.com/profiles/hilmar-lapp'),
+          ('ImpactStory', 'http://impactstory.org/hlapp'),
+          )
 
 DEFAULT_PAGINATION = 10
 
@@ -73,3 +79,6 @@ EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},}
 
 # Github ribbon. Not sure this is particularly useful for a website.
 GITHUB_URL = 'http://github.com/hlapp/hlapp.github.io'
+
+# Adding tweet-this button after posts?
+TWITTER_USERNAME = 'hlapp'
