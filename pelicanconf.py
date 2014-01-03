@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Hilmar Lapp'
 SITENAME = u'Lappland, Inside Out'
-SITESUBTITLE = u'Infrequent introspections from trying to see in an open world.'
+SITESUBTITLE = u'Infrequent, open introspections. Food for coffee.'
 SITEURL = ''
 
 TIMEZONE = 'America/New_York'
