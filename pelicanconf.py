@@ -68,3 +68,8 @@ OUTPUT_RETENTION = (".git",)
 # Custom URL for Github Pages-hosted site
 STATIC_PATHS = ['extras/CNAME',]
 EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},}
+
+# Theme-related settings:
+
+# Github ribbon. Not sure this is particularly useful for a website.
+GITHUB_URL = 'http://github.com/hlapp/hlapp.github.io'
