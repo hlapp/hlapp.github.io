@@ -63,6 +63,7 @@ AUTHOR_URL = 'author/{slug}/'
 AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 AUTHORS_URL = 'authors/'
 AUTHORS_SAVE_AS = 'authors/index.html'
+ARCHIVES_URL = 'blog/archives/'
 ARCHIVES_SAVE_AS = 'blog/archives/index.html'
 
 # Ignore emacs lock files on regenerating
