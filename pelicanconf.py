@@ -78,6 +78,11 @@ EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},}
 
 # Theme-related settings:
 
+# The theme
+THEME = 'pelican-bootstrap3'
+BOOTSTRAP_THEME = 'flatly'
+USE_OPEN_GRAPH = False
+
 # Github ribbon. Not sure this is particularly useful for a website.
 GITHUB_URL = 'http://github.com/hlapp/hlapp.github.io'
 
