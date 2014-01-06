@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Hilmar Lapp'
-SITENAME = u'Lappland, Inside Out'
+SITENAME = u'Lappland. Inside Out.'
 SITESUBTITLE = u'Infrequent, open introspections. Food for coffee.'
 SITEURL = ''
 
