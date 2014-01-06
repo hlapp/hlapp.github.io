@@ -21,4 +21,7 @@ DELETE_OUTPUT_DIRECTORY = True
 # Following items are often useful when publishing
 
 DISQUS_SITENAME = "lapplandio"
+DISQUS_NO_ID = False
+DISQUS_ID_PREFIX_SLUG = True
+DISQUS_DISPLAY_COUNTS = True
 GOOGLE_ANALYTICS = "UA-46838601-1"
