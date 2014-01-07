@@ -1,0 +1,13 @@
+Title: Why hacking on your site is worth bothering 
+Tags: open source, hacking
+Slug: why-its-worth-bothering
+Date: 2014-01-06 23:27:12
+Category: Open Dev
+
+Obviously the site isn't ugly anymore. Well, IMHO anyway. I've switched the site to a [Bootstrap3](http://getbootstrap.com/) theme (specifically, the [flatly theme](http://bootswatch.com/flatly/) of the [Bootswatch](http://bootswatch.com/) collection, using the [pelican-bootstrap3](https://github.com/DandyDev/pelican-bootstrap3) theme for, well, Pelican), and have since made [a number of fixes and improvements](https://github.com/search?p=1&q=author%3Ahlapp+repo%3ADandyDev%2Fpelican-bootstrap3&ref=searchresults&type=Issues) to the Pelican theme code. More are in the pipeline.
+
+In fact, I'm quite pleased with the appearance now. You could consider this the good news. It's also taken me the better part of 3 days to get there. You could consider this the bad news, but I don't (not that I wouldn't have gladly gotten there faster). Why? I spent a lot of this time learning about awesome open-source tools such as [font-awesome](http://fontawesome.io/), [Bootstrap](http://getbootstrap.com/), and [Jinja2 templates](http://jinja.pocoo.org/), all components that can be used (and some of which are being used in my team) for building many kinds of web-applications. I figured out why some of my changes were resulting in fatal Pelican exits. I refreshed my git-fu, my memory of git commands, and spent time thinking about how best to generate clean pull requests. Not only can all of these prove useful to me later in numerous ways, I also actually enjoyed the time. And it allowed me to make someone's software project better, even if ever so little.
+
+Which is probably part of why I feel very satisfied with the result, and certainly much more than I would have if I had stood up a Wordpress blog, even if that would have been vastly easier. And I really don't mean do pick on Wordpress - it's great software I have used for my own and still use to this day for research project blogs. Substitute your favorite blogging "platform", it's the same story - invariably their editing interfaces annoy out outright suck, because they're made to work for everyone (rather than me choosing what works best for me), and they fail, as they must, in subtle ways trying to hide the complexity of HTML from the user. So invariably what you learn from using them is how to work around the sometimes exasperating quirks of their editors. Not very satisfying to me: For what else can you use the tricks you learn, and who else can you help with them?
+
+Hence, so far so good - this endeavor has already returned some of what I was hoping to get out of it.
