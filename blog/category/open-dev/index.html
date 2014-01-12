@@ -8,6 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
 
     <!-- Bootstrap -->
@@ -16,12 +17,9 @@
 
     <link href="http://lappland.io/theme/css/pygments.css" rel="stylesheet">
     <link rel="stylesheet" href="http://lappland.io/theme/css/style.css" type="text/css"/>
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
 
         <link href="http://lappland.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="Lappland. Inside Out. ATOM Feed"/>
-
 </head>
 <body>
 
@@ -34,7 +32,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="http://lappland.io/" class="navbar-brand">Lappland. Inside Out.</a>
+            <a href="http://lappland.io/" class="navbar-brand">
+Lappland. Inside Out.            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -56,6 +55,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-9">
+
             <article>
                 <h2><a href="http://lappland.io/blog/2014/01/why-its-worth-bothering/">Why hacking on your site is worth bothering</a></h2>
                 <div class="summary"><p>Obviously the site isn't ugly anymore. Well, IMHO anyway. I've switched the site to a <a href="http://getbootstrap.com/">Bootstrap3</a> theme (specifically, the <a href="http://bootswatch.com/flatly/">flatly theme</a> of the <a href="http://bootswatch.com/">Bootswatch</a> collection, using the <a href="https://github.com/DandyDev/pelican-bootstrap3">pelican-bootstrap3</a> theme for, well, Pelican), and have since made <a href="https://github.com/search?p=1&amp;q=author%3Ahlapp+repo%3ADandyDev%2Fpelican-bootstrap3&amp;ref=searchresults&amp;type=Issues">a number of fixes and improvements</a> to the Pelican theme code. More ...</p></div>
@@ -111,11 +111,6 @@
 
                 <li class="list-group-item"><a href="http://lappland.io/blog/tags/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a></li>
                         <li class="list-group-item tag-4">
-                            <a href="http://lappland.io/blog/tag/open-content/">
-                                open content
-                            </a>
-                        </li>
-                        <li class="list-group-item tag-4">
                             <a href="http://lappland.io/blog/tag/release/">
                                 release
                             </a>
@@ -135,6 +130,11 @@
                                 hacking
                             </a>
                         </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/open-content/">
+                                open content
+                            </a>
+                        </li>
         </ul>
     </section>
 </aside>        </div>
@@ -143,14 +143,22 @@
 <footer>
     <div class="container">
         <hr>
-        <p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p>
-
-
-        <p>&copy; 2014 Hilmar Lapp &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+        <div class="row">
+        <div class="col-xs-10">&copy; 2014 Hilmar Lapp
+          &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
-            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a></p>
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>              <br/><small>  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small>
+        </div>
+        <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+        </div>
     </div>
 </footer>
+<!-- JavaScript plugins (requires jQuery) -->
+<script src="http://code.jquery.com/jquery.js"></script>
+
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="http://lappland.io/theme/js/bootstrap.min.js"></script>
 
@@ -169,7 +177,6 @@
             (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
     </script>
-
     <script type="text/javascript">
 
         var _gaq = _gaq || [];
