@@ -88,3 +88,9 @@ GITHUB_URL = 'http://github.com/hlapp/hlapp.github.io'
 
 # Adding tweet-this button after posts?
 TWITTER_USERNAME = 'hlapp'
+
+# Content licensing: CC-BY, and for now no attributiion markup
+CC_LICENSE = "CC-BY"
+# CC_LICENSE_DERIVATIVES = "yes"
+# CC_LICENSE_COMMERCIAL = "yes"
+# CC_ATTR_MARKUP = true
