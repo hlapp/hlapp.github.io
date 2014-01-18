@@ -73,7 +73,7 @@ IGNORE_FILES = ['.#*']
 OUTPUT_RETENTION = (".git",)
 
 # Custom URL for Github Pages-hosted site
-STATIC_PATHS = ['extras/CNAME',]
+STATIC_PATHS = ['images','extras/CNAME',]
 EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},}
 
 # Theme-related settings:
