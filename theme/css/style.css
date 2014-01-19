@@ -99,3 +99,9 @@ figure.floatleft {
     white-space: inherit;
     border-radius: inherit;
 }
+
+.categories-timestamp {
+    color: #AAAAAA;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
