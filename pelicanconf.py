@@ -31,6 +31,8 @@ SOCIAL = (('Github', 'http://github.com/hlapp'),
           ('ORCID', 'http://orcid.org/0000-0001-9107-0714'),
           ('Mendeley', 'http://www.mendeley.com/profiles/hilmar-lapp'),
           ('ImpactStory', 'http://impactstory.org/hlapp'),
+          ('Google Scholar', 'http://scholar.google.com/citations?user=CK6Qg7gAAAAJ'),
+          ('Slideshare', 'http://www.slideshare.net/hlapp/presentations'),
           )
 
 DEFAULT_PAGINATION = 10
