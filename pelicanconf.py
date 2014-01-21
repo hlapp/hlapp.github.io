@@ -70,7 +70,7 @@ ARCHIVES_URL = 'blog/archives/'
 ARCHIVES_SAVE_AS = 'blog/archives/index.html'
 
 # Ignore emacs lock files on regenerating
-IGNORE_FILES = ['.#*']
+IGNORE_FILES = ['.#*','.DS_Store']
 
 # Retain the .git repo when we delete the output folder's content.
 OUTPUT_RETENTION = (".git",)
