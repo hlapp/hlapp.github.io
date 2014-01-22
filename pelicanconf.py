@@ -70,9 +70,12 @@ IGNORE_FILES = ['.#*','.DS_Store']
 # Retain the .git repo when we delete the output folder's content.
 OUTPUT_RETENTION = (".git",)
 
-# Custom URL for Github Pages-hosted site
-STATIC_PATHS = ['images','extras/CNAME',]
-EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},}
+# Custom URL for Github Pages-hosted site, custom CSS for the site
+CUSTOM_CSS = 'static/css/lappland.css'
+STATIC_PATHS = ['images','extras/CNAME','extras/lappland.css']
+EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},
+                       'extras/lappland.css': {'path': CUSTOM_CSS},
+                       }
 
 # Theme-related settings:
 
