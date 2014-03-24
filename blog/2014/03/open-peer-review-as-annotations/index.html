@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Scientific peer-review as web-annotations: an experiment - Lappland. Inside Out.</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://lappland.io/theme/css/bootstrap.flatly.min.css" type="text/css"/>
+    <link href="http://lappland.io/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="http://lappland.io/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://lappland.io/theme/css/style.css" type="text/css"/>
+        <link href="http://lappland.io/static/css/lappland.css" rel="stylesheet">
+
+        <link href="http://lappland.io/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Lappland. Inside Out. ATOM Feed"/>
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://lappland.io/" class="navbar-brand">
+Lappland. Inside Out.            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="http://lappland.io/pages/about/">
+                             About
+                          </a></li>
+                        <li class="active">
+                            <a href="http://lappland.io/blog/category/lab/">Lab</a>
+                        </li>
+                        <li >
+                            <a href="http://lappland.io/blog/category/misc/">Misc</a>
+                        </li>
+                        <li >
+                            <a href="http://lappland.io/blog/category/open-dev/">Open dev</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://lappland.io/blog/archives/"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+                <li><a href="http://lappland.io/blog/feeds/all.atom.xml"><i class="fa fa-rss"></i></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="http://lappland.io/blog/2014/03/open-peer-review-as-annotations/"
+                       rel="bookmark"
+                       title="Permalink to Scientific peer-review as web-annotations: an experiment">
+                        Scientific peer-review as web-annotations: an experiment
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2014-03-24T08:32:59"> Mon 24 March 2014</time>
+    </span>
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="http://lappland.io/blog/tag/open-content/">open content</a>
+        /
+	<a href="http://lappland.io/blog/tag/scholarly-publishing/">scholarly publishing</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>Recently I was invited by the journal <a href="http://f1000research.com/">F1000 Research</a> to review an article about <a href="http://software-carpentry.org">Software Carpentry</a>, a wildly popular programming best-practices teaching workshop. As I sat down to write the review, loathing the highly antiquated and onerous process that peer-review remains to this day, I realized that the publishing model of the journal might just be the perfect prerequisite for trying out an entirely new way of pee-reviewing, namely by annotating online text, using the <a href="http://hypothes.is">Hypothes.is</a> platform. What follows is an account of what motivated me to experiment with this, and what resulted from it.</p>
+<h2>One step in fixing peer-review: open reviews</h2>
+<p>I have been among those arguing that scientific peer-review is broken, in particular the traditional anonymous closed peer-review model. Peer-reviews in <a href="http://f1000research.com/">F1000 Research</a> are strictly <a href="https://f1000research.com/referee-guidelines#key-points">open and associated with the reviewer's identity</a> <sup id="fnref:1"><a class="footnote-ref" href="#fn:1" rel="footnote">1</a></sup>. Furthermore, the jounal practices post-publication review: It publishes manuscripts online almost immediately (after passing some basic quality checks) upon submission. Peer-reviews, which the journal invites, as done traditionally, from peers in pertinent fields, comment on and issue verdicts on an article's scientific soundness. The reviews then determine whether a major revision is required, and whether the article is indexed for searching by F1000 itself or by other scientific literature search services (such as Pubmed).</p>
+<p>This publishing model allowed thinking about experimenting without concern for comments being public or associated with my identity or not.</p>
+<h2>Why the peer-review process is still loathsome</h2>
+<p>As anyone who has ever written or received a scientific peer-review will know, the way this is done, specifically the way we reference, comment, and respond to comments on parts of the text, still follows antiquated procedures from the days of print-only publishing and typewriters. This is the case whether peer-reviews are open or not. Articles are typically sent to reviewers with line and page numbers added to the margins by a publisher's manuscript management system. To comment on specific parts of the text, a reviewer then cites the page and line number, and possibly quotes pieces of text. In an age in which nobody uses typewriters anymore the line numbers and their spacing is often unaligned with the line spacing of the text, some systems reset line numbers on every page, some journals<sup id="fnref:2"><a class="footnote-ref" href="#fn:2" rel="footnote">2</a></sup> use 2-column manuscript templates yet number only one column, and some, including in fact F1000 Research, have disposed of line numbers altogether, forcing reviewers to create some numbering of paragraphs or sentences for themselves. Authors, upon receiving the reviews weeks (or months) after submission, the time they last looked at the manuscript, then have to painstakingly link each reviewer comment to the exact position in their editable version of the manuscript (which does not have line numbers, and whose page numbers will differ from the version sent to reviewers due to cover pages etc). The "links" are typically only in the authors' heads; as there is no way to insert clickable hyperlinks from the review comments to the text position or vice versa, associating comments to text being commented on would require painstakingly copy and pasting each one of them into marginal comments (or footnotes, depending on word processor and editor).</p>
+<p>The litany doesn't end there. Once a revision of the manuscript is prepared, authors do copy and paste each reviewer comment, this time into a rebuttal letter, and then add their responses to each comment. Formatting choices for distinguishing reviewers' from authors' comments vary wildly. The most diligent authors then also copy and paste the actual verbatim changes to the text they made in response to a reviewer comment; many don't, and many times the changes to the text are extensive and scattered enough to defy even the best intentions. The process then cycles back to the reviewers, who are asked to evaluate whether the author's responses and text changes satisfy their concerns. Precisely because of the revisions to the text, the line and page numbers and quotes of original text that the reviewer used in their original comment to identify the text location are now typically no longer valid or present, so if the author didn't or couldn't copy and paste their text changes into the rebuttal letter, the reviewer has to then somehow re-identify the text location. Sometimes this is easy, many more times it's confusing enough that if the author's response isn't too defiant a reviewer will be inclined to simply check it off.</p>
+<h3>The cost to knowledge production and consumption</h3>
+<p>Perhaps most importantly, a reader of the <em>article</em> will see none of this. No markers in the article text will highlight which specific claims, data, or method a reviewer has questioned. There is no indication where reviewers agree or disagree in their criticisms. There is no hint which claims were deleted, or restated in a revision, and why; likewise, why some claims were not changed even though a reviewer questioned them is also not immediately visible.</p>
+<p>With peer-reviews that are open instead of closed, someone with enough understanding, skill, and time at least <em>can</em> extract this information from the peer-reviews and rebuttal letter(s), which is clearly a huge step forward towards research transparency. However, in the digital age there is little justification anymore for erecting (or leaving) a wall between the articles containing our scientific knowledge, and the fine-grained comments experts make on them. And there's also little justification for the peer-review process being as onerous to experts and as inscrutable to non-experts as it is.</p>
+<h2>The experiment: review comments as online text annotations</h2>
+<p>Enter <a href="http://hypothes.is">Hypothes.is</a>. The project, launched in 2011 through a <a href="https://www.kickstarter.com/projects/dwhly/hypothesis-taking-peer-review-to-the-internet">Kickstarter campaign</a> <sup id="fnref:3"><a class="footnote-ref" href="#fn:3" rel="footnote">3</a></sup>, boldly aims to make the world's online knowledge and information peer-reviewed, by developing <a href="http://www.openannotation.org/spec/core/">standards</a> and an open-source <a href="https://hypothes.is/contribute">platform for online annotation</a>:</p>
+<figure style="max-width: 128px;" class="floatright">
+<a href="http://hypothes.is"><img class="img-responsive" src="/images/Hypothes.is_logo.jpg"/></a></figure>
+
+<blockquote>
+<p>Hypothes.is will be an open platform for the collaborative evaluation of knowledge. It will combine sentence-level critique with community peer-review to provide commentary, references, and insight on top of news, blogs, scientific articles, books, terms of service, ballot initiatives, legislation and regulations, software code and more.</p>
+</blockquote>
+<p>Reviewer comments in scientific peer-review for the most part <em>are</em> annotations. With F1000 Research articles being already fully on the web at the time of review<sup id="fnref:4"><a class="footnote-ref" href="#fn:4" rel="footnote">4</a></sup>, and my review comments to be openly available and associated with my name by definition, this seemed like a perfect opportunity to try open annotation in Hypothes.is as a scientific peer-review tool that wouldn't suffer from many of the shortcomings outlined above<sup id="fnref:other work"><a class="footnote-ref" href="#fn:other work" rel="footnote">5</a></sup>.</p>
+<h2>Results: Lots of potential, lots of ways to go</h2>
+<p>There are two ways to see the review comments made with Hypothes.is. One is to install the <a href="http://hypothes.is/alpha">browser extension</a> (if you haven't already), navigating to the <a href="http://f1000research.com/articles/3-62/v1">article URL</a>, and turning on the extension. At present this unfortunately requires Google Chrome. (The extension is also required for making, or replying to annotations.) The other is the <a href="https://hypothes.is/stream#?user=hlapp&amp;uri=http:%2F%2Ff1000research.com%2Farticles%2F3-62%2Fv1">Hypothes.is "stream" interface</a>.</p>
+<p>The <a href="http://f1000research.com/articles/3-62/v1#article-reports">full review</a>, with overarching comments preceding the link to the detailed annotations, is available form the <a href="http://f1000research.com/articles/3-62/">article's onlne version</a> at F1000 Research. You will notice that the review includes a complete transcript of the online annotations; see below for why.</p>
+<p>Some of the lessons learned from the experiment follow.</p>
+<h3>What worked (or could have worked) well</h3>
+<ul>
+<li>
+<p>Even though characterized as "alpha" software, making my comments with the <a href="https://hypothes.is/what-is-it">Hypothes.is Annotator</a> via direct annotation of an online text as I read through it was far more efficient than making notes with the usual cumbersome way of citing line, page, and paragraph numbers and quoting. Essentially, one highlights the sentence or phrase one wishes to comment on, clicks the <a href="http://annotatorjs.org/">Annotator</a> icon that appears and enters the comment.</p>
+</li>
+<li>
+<p>Comments can be edited or deleted later, such as if later parts of the manuscript put the commented text in a different light. Comments can also be tagged, which could be used to distuingish between major and minor comments (but I didn't).</p>
+</li>
+<li>
+<p>An author (or in fact anyone else) could directly respond to the comments, establishing a discussion thread that is directly linked to the part of the text that is its subject. Obviously, this can't be seen yet, and in fact may never be, see below.</p>
+</li>
+</ul>
+<h3>Much room for improvement</h3>
+<ol>
+<li>Although the comments comprising a review can be <a href="https://hypothes.is/stream#?user=hlapp&amp;uri=http:%2F%2Ff1000research.com%2Farticles%2F3-62%2Fv1">retrieved in whole through a URL reference</a>, bundling them up in the form needed remains lacking.<ul>
+<li>The Hypothes.is platform doesn't yet have a URL that resolves as the review annotations as a whole, or a single annotation on top of the online text<sup id="fnref:Diigo link feature"><a class="footnote-ref" href="#fn:Diigo link feature" rel="footnote">7</a></sup>. This view requires manually <a href="http://hypothes.is/alpha">installing a browser extension</a>, turning it on when on the article page, and activating highlighting mode. </li>
+<li>The URL interface that exists for retrieving review comments (the <a href="http://hypothes.is/stream">"stream" interface</a>) shows them in reverse chronological order (most recent first), and for now there is no option to control the ordering. The awkward consequence of this is that if a reviewer comments on an article from start to end (as would be typical), the author would need to read the comment stream last to first to be consistent with the direction of article and comment flow.</li>
+</ul>
+</li>
+<li>Critical kinds of integration with a scientific journal's workflow and requirements remain challenging.<ul>
+<li>As will likely any journal, F1000 Research wants a permanent record of the annotations that comprise a peer-review, and one that can accompany the article's PDF version. There is no direct way to create a PDF yet from Hyppthes.is annotations, leaving print-to-file as the only alternative. But this loses many of the advantages of using online annotation to start with, such as easy pinpointing of text position, establishing a conversation thread, and making the conversation accessible to the public, unless some way is found to keep offline and online versions in syncrony. </li>
+<li>Although reviewer comments on F1000 Research do become public, they normally don't do so instantly, but are reviewed for meeting professional standards by F1000 staff first. A journal exercising and enforcing quality control is certainly a Good Thing. The comments I made using Hypothes.is became public immediately<sup id="fnref:5"><a class="footnote-ref" href="#fn:5" rel="footnote">6</a></sup>, though presumably a journal-hosted version could keep them private until checked and approved.</li>
+<li>To aid in later retrievability, I added a tag "F1000 Review" to each comment. In this experiment I had to repeat this myself for every comment; ideally, a journal would have set up the <a href="https://hypothes.is/what-is-it">Hypothes.is Annotator</a> for itself such that comments entered by a reviewer would automatically be tagged uniquely such that they can subsequently be linked to the review and reviewer.</li>
+</ul>
+</li>
+</ol>
+<p>In the concrete case, the deficiencies in fitting with the journal's record keeping and workflow requirements were strong enough that F1000 staff ended up transcribing the comments into an offline text that form the permanent record, and which will thus likely be what the article author ends up responding to (lest they create yet more transcription work for the F1000 staff). So in the end my experiment caused more work rather than less for the journal staff.</p>
+<h3>Open questions</h3>
+<p>Most reviews will include some overarching commentary, often a summary or synthesis of the more detailed comments. If a reviewer recommends rejection (or in the case of F1000 Research, <a href="https://f1000research.com/referee-guidelines#your-role">withholds "approval"</a>), the most serious concerns about the work will usually be highlighted there. It's unclear to me whether that part fits the mold of a text annotation equally well; it really applies to the article as a whole than some part of the text.</p>
+<p>In my case, I entered the overarching commentary into the review submission form. However, a solution that is better integrated with online annotation might have a more seamless way of providing, and showing them at the article level. </p>
+<h2>Conclusions</h2>
+<p>Given how antiquated, inefficient, and wholly unnecessary the current way of conducting peer-reviews is in the digital age, it's hard to imagine that this isn't on the verge of being innovated. I think the shift in ecosystem and economic driving forces in scholarly publishing are providing the perfect fertile ground. A journal's subject area is becoming increasingly less critical as a sustaining market niche; instead, the emerging category of "mega-journals" pioneered by <a href="http://plosone.org">PLoS ONE</a> will increasingly compete on the basis of customer service and maximizing the impact of their publications (and thus contributions to their quality). I'm willing to bet that this will soon include overhauls of the peer-review process.</p>
+<p>I hope that online annotation platforms and standards will figure prominently in this transformation, so that peer-review commentary, and the scholars who make them, can become a seamless part of the web's discussion layer. However, the experiment also shows that integration of online annotation tools, as sophisticated and promising as they are, has still a long ways to go. Making this happen will take journals and publishers assuming ownership of it.</p>
+<p>Finally, as excited as I have been about <a href="http://hypothes.is">Hypothes.is</a> ever since it appeared on the scene, as an ambition, as a community nurturing initiave, and as an actual software project, my sense is that it would benefit well from pushing itself more from aspiration towards actual production uses. The browser extension is still only available for Chrome (and in fact not even advertised on the front page). The stream interface is unadvertised and misses basic features (including an ability as fundamental to the ideas as responding to an annotation). Perhaps scholarly publishing is only a small pond in the greater picture. But at a time when scandals of scientific fraud, data fabrication, and lack of repeatibility shake the public's trust in science more than ever, creating an online conversation around scientific critique, in particular with a platform that is designed open throughout, would seem as an opportunity with potential benefits for everyone.</p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>Unlike closed anonymous reviews, this allows a scholar to receive credit for the reviews she writes. It could also be used to "rate" the quality of reviews (as perhaps measured by depth, constructiveness, etc), which would provide more direct incentives for more in-depth reviews. But F1000 Research doesn't seem to be using it for this purpose (yet?); arguably, doing so is also fraught with problems (how to measure review quality? who should do the rating? how to prevent review rating from biasing reviewers towards positivity? etc).&#160;<a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Bioinformatics (OUP), I am looking at you.&#160;<a class="footnote-backref" href="#fnref:2" rev="footnote" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>Disclosures: I was one of the campaign's backers. I was also chair of the organizing committee that invited Dan Whaley (founder of Hypothes.is) to present <a href="https://www.youtube.com/watch?v=cNrAS979MfA">one of the 2012 iEvoBio Conference keynote addresses</a> (which is well worth watching, BTW. And yes, that's me introducing him, and yes, I'm wearing a Hypothes.is t-shirt.).&#160;<a class="footnote-backref" href="#fnref:3" rev="footnote" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>This is more novel than one might think. For journals that publish articles only post-acceptance (as almost all do) manuscripts can take a significant amount of time after acceptance -- sometimes weeks, or months -- before they appear online. Some publishers have introduced "early online access" sections for their journals; manuscripts in those sections are typically only available in the form of "preliminary" PDFs, not in HTML. Most online annotation platforms don't, or don't yet work on PDFs, and the preliminary PDFs are expressly intended to be superseded by the final typeset version, rather than to have a persistent presence. &#160;<a class="footnote-backref" href="#fnref:4" rev="footnote" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:other work">
+<p>I am of course far from the first one to think about open online annotation and Hypothes.is for scientific peer-review. Peter Brantley, Hypothes.is' Director of Scholarly Communication, in his <a href="http://scholarlykitchen.sspnet.org/2013/10/09/scholarly-kitchen-podcast-peter-brantley-on-annotating-the-web/">interview for The Scholarly Kitchen</a> speaks specifically about the possibility of utilizing open annotation for scientific peer-review, and there's a <a href="http://researchity.net/2011/11/01/peer-review-should-be-more-like-hypothes-is-than-hypothes-is-should-be-like-peer-review/">post on Researchity</a> from the time of the Kickstarter campaign, to name a few.&#160;<a class="footnote-backref" href="#fnref:other work" rev="footnote" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>I realized only after the fact that this is a difference to how comments would have become public if submitted solely through the journal's review submission form. However, F1000 Research's reviewer guidelines didn't prohibit (or even mention) the use of external online annotation tools; perhaps this is something that journals innovating scholarly peer-review should be more cognizant, and explicit about.&#160;<a class="footnote-backref" href="#fnref:5" rev="footnote" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:Diigo link feature">
+<p><a href="http://www.diigo.com">Diigo</a>, an online bookmarking and annotation service, does allow to provide a link to the annotated version of an online page. For example, this is an <a href="https://diigo.com/01j2ng">article with highlights I made</a> for a journal club. It works well in Chrome and Firefox but only if the respective browser extension is installed. Diigo is a pretty mature product that I use frequently and could have used for this experiment as well; however, it is commercial and not an open-source platform, whereas Hypothes.is could be adapted, contributed to, extended, and deployed by anyone.&#160;<a class="footnote-backref" href="#fnref:Diigo link feature" rev="footnote" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+            </div>
+            <!-- /.entry-content -->
+    <hr />
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'lapplandio'; // required: replace example with your forum shortname
+            var disqus_identifier = '2014-03-open-peer-review-as-annotations';
+            var disqus_url = 'http://lappland.io/blog/2014/03/open-peer-review-as-annotations/';
+            var disqus_config = function () {
+                this.language = "en";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3 well well-sm" id="sidebar">
+
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+                  <ul class="list-group" id="social">
+                    <li class="list-group-item"><a href="http://github.com/hlapp"><i
+                            class="fa fa-github-square fa-lg"></i> Github
+                    </a></li>
+                    <li class="list-group-item"><a href="http://plus.google.com/+HilmarLapp/"><i
+                            class="fa fa-google-plus-square fa-lg"></i> Google+
+                    </a></li>
+                    <li class="list-group-item"><a href="http://twitter.com/hlapp"><i
+                            class="fa fa-twitter-square fa-lg"></i> Twitter
+                    </a></li>
+                    <li class="list-group-item"><a href="http://linkedin.com/in/hlapp"><i
+                            class="fa fa-linkedin-square fa-lg"></i> LinkedIn
+                    </a></li>
+                  </ul>
+                </li>
+
+
+
+                <li class="list-group-item"><a href="http://lappland.io/blog/tags/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                    <ul class="list-group" id="tags">
+                        <li class="list-group-item tag-1">
+                            <a href="http://lappland.io/blog/tag/hacking/">
+                                hacking
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="http://lappland.io/blog/tag/open-source/">
+                                open source
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-1">
+                            <a href="http://lappland.io/blog/tag/open-content/">
+                                open content
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/cloud/">
+                                cloud
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/testing/">
+                                testing
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/release/">
+                                release
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/data-reuse/">
+                                data reuse
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/data-sharing/">
+                                data sharing
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/scholarly-publishing/">
+                                scholarly publishing
+                            </a>
+                        </li>
+                        <li class="list-group-item tag-4">
+                            <a href="http://lappland.io/blog/tag/hardware/">
+                                hardware
+                            </a>
+                        </li>
+                    </ul>
+                </li>    
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://www.open-bio.org/" target="_blank">
+                Open Bio Foundation
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://datadryad.org" target="_blank">
+                Dryad
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://phenoscape.org/" target="_blank">
+                Phenoscape
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://chapelhillshotokan.org/" target="_blank">
+                Chapel Hill Shotokan
+            </a>
+        </li>
+      </ul>
+    </li>
+
+        </ul>
+    </section>
+
+</aside>        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2014 Hilmar Lapp
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>              <p><small>  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+    Content
+  licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where indicated otherwise.
+</small></p>
+         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://lappland.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://lappland.io/theme/js/respond.min.js"></script>
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'lapplandio'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46838601-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</body>
+</html>
