@@ -1,6 +1,7 @@
 Title: Scientific peer-review as web-annotations: an experiment
 Slug: open-peer-review-as-annotations
 Tags: open content, scholarly publishing
+Status: draft
 Category: Lab
 
 Recently I was invited by the journal [F1000 Research] to review an article about [Software Carpentry], a wildly popular programming best-practices teaching workshop. As I sat down to write the review, loathing the highly antiquated and onerous process that peer-review remains to this day, I realized that the publishing model of the journal might just be the perfect prerequisite for trying out an entirely new way of pee-reviewing, namely by annotating online text, using the [Hypothes.is] platform. What follows is an account of what motivated me to experiment with this, and what resulted from it.
@@ -28,7 +29,7 @@ With peer-reviews that are open instead of closed, someone with enough understan
 Enter [Hypothes.is]. The project, launched in 2011 through a [Kickstarter campaign] [^3], boldly aims to make the world's online knowledge and information peer-reviewed, by developing [standards](http://www.openannotation.org/spec/core/) and an open-source [platform for online annotation](https://hypothes.is/contribute):
 
 <figure style="max-width: 128px;" class="floatright">
-<a href="http://hypothes.is"><img class="img-responsive" src="/images/hypothes.is_logo.jpg"/></a></figure>
+<a href="http://hypothes.is"><img class="img-responsive" src="/images/Hypothes.is_logo.jpg"/></a></figure>
 > Hypothes.is will be an open platform for the collaborative evaluation of knowledge. It will combine sentence-level critique with community peer-review to provide commentary, references, and insight on top of news, blogs, scientific articles, books, terms of service, ballot initiatives, legislation and regulations, software code and more.
 
 Reviewer comments in scientific peer-review for the most part _are_ annotations. With F1000 Research articles being already fully on the web at the time of review[^4], and my review comments to be openly available and associated with my name by definition, this seemed like a perfect opportunity to try open annotation in Hypothes.is as a scientific peer-review tool that wouldn't suffer from many of the shortcomings outlined above[^other work].
