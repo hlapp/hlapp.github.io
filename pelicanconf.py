@@ -80,7 +80,7 @@ EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},
 # Theme-related settings:
 
 # The theme
-THEME = 'pelican-bootstrap3'
+THEME = 'lappland-theme'
 BOOTSTRAP_THEME = 'flatly'
 USE_OPEN_GRAPH = False
 
