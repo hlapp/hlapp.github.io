@@ -33,7 +33,7 @@ SOCIAL = (('Github', 'http://github.com/hlapp'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 # By default obtain date metadata from last modification date of file
 DEFAULT_DATE = 'fs'
@@ -42,7 +42,7 @@ DEFAULT_DATE = 'fs'
 USE_FOLDER_AS_CATEGORY = False
 
 # Blog articles are in articles/
-ARTICLE_DIR = 'articles'
+ARTICLE_PATHS = ['articles']
 
 # Custom URLs for articles, category pages, and tag pages
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{slug}/'
@@ -80,8 +80,20 @@ EXTRA_PATH_METADATA = {'extras/CNAME': {'path': 'CNAME'},
 # Theme-related settings:
 
 # The theme
-THEME = 'lappland-theme'
+THEME = 'Devel/lappland-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
+# enable the tag cloud in the sidebar
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_INLINE = True
+# include basic article metadata on index pages
+DISPLAY_ARTICLE_INFO_ON_INDEX = True
+# our theme supports translation
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+# Plugins needed for template initialization for i18n, and for tag cloud
+PLUGIN_PATHS = ['/usr/local/share/pelican-plugins']
+PLUGINS = ['i18n_subsites', 'tag_cloud']
+
+# other theme-customization settings
 USE_OPEN_GRAPH = False
 
 # Github ribbon. Not sure this is particularly useful for a website.
@@ -95,3 +107,9 @@ CC_LICENSE = "CC-BY"
 # CC_LICENSE_DERIVATIVES = "yes"
 # CC_LICENSE_COMMERCIAL = "yes"
 # CC_ATTR_MARKUP = true
+
+# Disqus comments
+DISQUS_SITENAME = "lapplandio"
+DISQUS_NO_ID = False
+DISQUS_ID_PREFIX_SLUG = True
+DISQUS_DISPLAY_COUNTS = True
