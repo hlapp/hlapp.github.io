@@ -17,10 +17,11 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # Blogroll
-LINKS =  (('Open Bio Foundation', 'http://www.open-bio.org/'),
-          ('Dryad', 'http://datadryad.org'),
+LINKS =  (('OBF News', 'https://news.open-bio.org/'),
           ('Phenoscape', 'http://phenoscape.org/'),
-          ('Chapel Hill Shotokan','http://chapelhillshotokan.org/'),
+          ('Phyloref', 'http://phyloref.org/'),
+          ('Dryad', 'http://datadryad.org'),
+          ('Chapel Hill Shotokan','http://chapelhill.ska.org'),
           )
 
 # Social widget
