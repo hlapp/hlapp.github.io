@@ -25,9 +25,11 @@ LINKS =  (('Open Bio Foundation', 'http://www.open-bio.org/'),
 
 # Social widget
 SOCIAL = (('Github', 'http://github.com/hlapp'),
-          ('Google+', 'http://plus.google.com/+HilmarLapp/'),
           ('Twitter', 'http://twitter.com/hlapp'),
           ('LinkedIn', 'http://linkedin.com/in/hlapp'),
+          ('ORCID', 'http://orcid.org/0000-0001-9107-0714', 'university'),
+          ('Keybase', 'https://keybase.io/hlapp', 'key'),
+          ('Google+', 'http://plus.google.com/+HilmarLapp/'),
           )
 
 DEFAULT_PAGINATION = 10
